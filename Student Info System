@@ -11,6 +11,14 @@ class Mydetails(Student):
 		Student.__init__(self,name,dep)
 		self.mob_no=mob_no
 		
-myStudent=Mydetails("Aashi","IT",12346)
+			
+x=input("enter name")
+y=input("enter dep")
+z=input("enter mob_no")
+		
+myStudent=Mydetails(x,y,z)
 print(myStudent)
 print(myStudent.mob_no)
+
+
+
