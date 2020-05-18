@@ -1,0 +1,16 @@
+class Student:
+	def __init__(self,name,dep):
+		self.name=name
+		self.dep=dep
+		
+	def __str__(self):
+		return "{},{}".format(self.name,self.dep)
+		
+class Mydetails(Student):
+	def __init__(self,name,dep,mob_no):
+		Student.__init__(self,name,dep)
+		self.mob_no=mob_no
+		
+myStudent=Mydetails("Aashi","IT",12346)
+print(myStudent)
+print(myStudent.mob_no)
