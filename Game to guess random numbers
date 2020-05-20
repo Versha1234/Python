@@ -1,0 +1,26 @@
+y="All the best"
+print(y)
+
+x=int(input("No of time u want to guess"))
+z=int(input('Enter the no:'))
+
+import random
+number=random.randint(1,5)
+print(number)
+
+points=0
+trails=0
+
+while trails < x:
+    trails+=1
+    z=int(input('Enter the no:'))
+    number=random.randint(1,5)
+    print(number)
+    if number==z:
+        points+=1
+        print("Your point increased")
+    else:
+        print("Sorry wrong guess")
+        
+print("Final score")
+print(points)
