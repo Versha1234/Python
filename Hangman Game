@@ -62,28 +62,28 @@ def hangman():
             if turns==4:
                 print("4 turns left")
                 print(" ________ ")
-                print("   \0     ")
+                print("  \ 0     ")
                 print("    |     ")
                 print("   / \    ")
                 
             if turns==3:
                 print("3 turns left")
                 print(" ________ ")
-                print("   \0/    ")
+                print("  \ 0 /   ")
                 print("    |     ")
                 print("   / \    ")
                 
             if turns==2:
                 print("2 turns left")
                 print(" ________ ")
-                print("   \0/|   ")
+                print("  \ 0 / | ")
                 print("    |     ")
                 print("   / \    ")
                 
             if turns==1:
                 print("last breathe counting")
                 print(" ________ ")
-                print("   \0_|/  ")
+                print("  \ 0 _| / ")
                 print("    |     ")
                 print("   / \    ")
                 
