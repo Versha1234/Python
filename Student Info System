@@ -11,14 +11,27 @@ class Mydetails(Student):
 		Student.__init__(self,name,dep)
 		self.mob_no=mob_no
 		
-			
-x=input("enter name")
-y=input("enter dep")
-z=input("enter mob_no")
+	def __str__(self):
+		return "{},{},{}".format(self.name,self.dep,self.mob_no)
 		
-myStudent=Mydetails(x,y,z)
-print(myStudent)
-print(myStudent.mob_no)
+record=0
+t=int(input("enter the no of records:"))
+list=[]
+while record<t:
+    x=input("enter name")
+    y=input("enter dep")
+    z=input("enter mob_no")
+    record+=1
+
+    myStudent=Mydetails(x,y,z)
+    print(myStudent)
+    list.append(myStudent)
+    
+for obj in list:
+    print(obj.name,obj.dep,obj.mob_no)
+		
+			
+
 
 
 
