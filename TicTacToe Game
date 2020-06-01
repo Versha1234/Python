@@ -85,7 +85,7 @@ def compmove():
         return move
            
         
-def selectrandom():
+def selectrandom(li):
     import random
     ln=len(li)
     r=random.randrange(0,ln)
