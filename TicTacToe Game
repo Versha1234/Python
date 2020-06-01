@@ -1,7 +1,7 @@
 board=[' 'for board in range(10)]    
     
     
-def insertLetter(letter,pos):
+def insertletter(letter,pos):
     board[pos] = letter
        
 def spaceIsfree(pos):
